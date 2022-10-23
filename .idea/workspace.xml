@@ -9,27 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd39fdb7-6603-43df-a3a6-6a988444da36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/imgs/img-carousel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/imgs/slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/imgs/slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/imgs/slide3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Home.css" afterDir="false" />
-    </list>
+    <list default="true" id="dd39fdb7-6603-43df-a3a6-6a988444da36" name="Changes" comment="Nguyen Du Lap commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,8 +157,16 @@
       <updated>1666518074063</updated>
       <workItem from="1666518075657" duration="2605000" />
       <workItem from="1666521936265" duration="249000" />
-      <workItem from="1666539659517" duration="355000" />
+      <workItem from="1666539659517" duration="839000" />
     </task>
+    <task id="LOCAL-00001" summary="Nguyen Du Lap commit">
+      <created>1666540142287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666540142287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,5 +182,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nguyen Du Lap commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nguyen Du Lap commit" />
   </component>
 </project>

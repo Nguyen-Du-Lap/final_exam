@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/Header.css">
+    <link rel="stylesheet" href="./styles/Cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <!-- -----------phần header----------------  -->
+    <header>
+        <div id="header">
+            <div class="top-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <a class="logo" href="#">DORAEMON</a>
+                    <div class="top-header_search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="top-header-left">
+                        <div class="top-header_account">Tài khoản của bạn
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_account--item">
+                                <a href="" class="account--item_top">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <span>Tài khoản Facebook</span>
+                                </a>
+                                <a href="" class="account--item_center"><span>Đăng nhập</span></a>
+                                <div class="account--item_bottom">
+                                    <span>Khách hàng mới?</span>
+                                    <a class="register" href="">Tạo tài khoản</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-header_cart">Giỏ hàng
+                            <span class="top-header_cart-quantity">(0)</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_cart--item">
+                                <h4 class="cart--item_title">Giỏ hàng</h4>
+                                <hr>
+                                <a href="" class="cart--item_link">
+                                    <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header-left_media">
+                        <a href="">
+                            <div class="container-icon_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="sticker">0</div>
+                            </div>
+                        </a>
+                        <i onclick="openSearch()" class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
+                        <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="container_bg-search" class="container_bg-search">
+                <div class="container">
+                    <div class="top-header_search-media">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <span>Tìm kiếm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <div class="menu_products">
+                        <i class="fa-solid fa-bars"></i>
+                        Danh mục sản phẩm
+                        <nav class="menu_item">
+                            <ul class="type_products">
+                                <li class="type_products-item type_hots">
+                                    <span class="container_type-arrow">
+                                        <div>Nổi bật</div>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                    <ul class="type_hot-child">
+                                        <li><a href="">
+                                                <p>Sách bán chạy</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách mới</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sắp phát hành</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách giảm giá</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="type_products-item"><a href=""><span>Văn Học Nước Ngoài</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Văn Học Trong Nước</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Kĩ Năng Sống</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Thiếu Nhi</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Truyện Tranh</span></a></li>
+                                <li class="type_products-item type_companys">
+                                    <a href="">
+                                        <span class="container_type-arrow">
+                                            <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="type_companys-child">
+                                        <li><a href="">
+                                                <p>Công ty cổ phần zgroup</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Skybooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Chilbooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Thái Hà</p>
+                                            </a></li>
+                                        <li><a class="type_company-all" href="">
+                                                <p>Tất cả công ty phát hành</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="" class="hotline d-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Hotline: </h4>
+                        <span>0867 415 853</span>
+                    </a>
+    
+                </div>
+            </div>
+    
+        </div>
+        <!-- open sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="dropdown-btn">Tài khoản
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Đăng ký</a>
+                <a href="#">Đăng nhập</a>
+            </div>
+            <button class="dropdown-btn">Nổi bật
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Sách bán chạy</a>
+                <a href="#">Sách mới</a>
+                <a href="#">Sắp phát hành</a>
+                <a href="#">Sách giảm giá</a>
+            </div>
+            <a href="#">Văn học nước ngoài</a>
+            <a href="#">Sách văn học trong nước</a>
+            <a href="#">Sách kĩ năng sống</a>
+            <a href="#">Sách thiếu nhi</a>
+        </div>
+    </header>
+    <!--------- end header---------- -->
+    <div id="content">
+        <div class="container">
+            <h1 class="header_title">GIỎ HÀNG</h1>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Thành tiền</th>
+                    <th scope="col">Xóa</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="col_img"><img src="" alt=""></div></td>
+                    <td>
+                        <div class="col-container_content">
+                            <h2 class="title">Đồng Vọng Dân Gian - Tập 1 - Bản Đặc Biệt - Tặng Kèm Sticker + Postcard Bồi Cứng + Bookmark Đặc Biệt</h2>
+                            <div class="wrap_id">
+                                <span class="id">Mã SP</span>
+                                <div id="id">123</div>
+                            </div>
+                            <div class="wrap_price">
+                                <div class="price">125.200đ</div>
+                                <div class="price_sale active">125.200đ</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <!-- ----js phần header -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/header.js"></script>
+</body>
+
+</html>
