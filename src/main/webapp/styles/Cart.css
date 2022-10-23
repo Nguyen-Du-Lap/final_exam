@@ -1,0 +1,32 @@
+:root {
+    --bs-blue-default: #1a94ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: initial;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+#content {
+    padding-top: 90px;
+}
