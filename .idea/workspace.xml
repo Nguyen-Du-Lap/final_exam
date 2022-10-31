@@ -9,10 +9,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd39fdb7-6603-43df-a3a6-6a988444da36" name="Changes" comment="20130307_NguyenThuyLinh commit code project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Product_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Product_type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/Product_item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/Product_item.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,26 +48,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nguyenthuylinh/Documents/HKI_2022_2023/LTWeb/final_exam&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LTW\final_exam\src\main\webapp\styles" />
+      <recent name="D:\LTW\final_exam\src\main\webapp\scripts" />
+      <recent name="D:\LTW\final_exam\src\main\webapp" />
+      <recent name="D:\LTW\final_exam\src\main\webapp\WEB-INF" />
       <recent name="D:\NhungDuAnJava\final_exam\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -171,10 +171,7 @@
       <workItem from="1666518075657" duration="2605000" />
       <workItem from="1666521936265" duration="249000" />
       <workItem from="1666539659517" duration="839000" />
-      <workItem from="1666542201155" duration="1159000" />
-      <workItem from="1666590887162" duration="1519000" />
-      <workItem from="1667194685998" duration="80000" />
-      <workItem from="1667194818232" duration="128000" />
+
     </task>
     <task id="LOCAL-00001" summary="Nguyen Du Lap commit">
       <created>1666540142287</created>
@@ -183,12 +180,12 @@
       <option name="project" value="LOCAL" />
       <updated>1666540142287</updated>
     </task>
-    <task id="LOCAL-00002" summary="20130307_NguyenThuyLinh commit code project">
-      <created>1666542630048</created>
+    <task id="LOCAL-00002" summary="Nguyen Du Lap commit">
+      <created>1666540611590</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1666542630048</updated>
+      <updated>1666540611590</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
