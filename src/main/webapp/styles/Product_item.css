@@ -525,24 +525,121 @@ hr {
 }
 
 /*--------------------CONTENT------------------*/
+
 #content {
     margin-bottom: 0px;
     padding-top: 100px;
 }
 
-#content .prod
-
-#content .list-group {
-    margin-bottom: 0px;
+#content #products_left {
+    float: left;
+    width: 25%;
+    margin-left: 5%;
 }
 
-#content .list-group-item:first-child {
+#content #products_left .behclick-panel .list-group {
+    margin-bottom: 0px;
+}
+#content #products_left .behclick-panel .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
 
-#content .list-group-item {
+#content #products_left .behclick-panel .list-group-item {
     border-right: 0px;
-
+    border-left: 0px;
 }
 
+#content #products_left .behclick-panel .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#content #products_left .behclick-panel .list-group-item {
+    padding: 5px;
+}
+
+#content #products_left .behclick-panel .panel-heading {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom: 1px solid darkslategrey;
+}
+
+.behclick-panel {
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.behclick-panel .radio, .checkbox {
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.behclick-panel .panel-title > a, .panel-title > small, .panel-title small a {
+    outline: none;
+}
+
+.behclick-panel .filter_content > .panel-heading {
+    padding: 10px 10px;
+}
+
+.behclick-panel .filter_content {
+    padding: 0px;
+}
+
+.behclick-panel a:link, .behclick-panel a:visited, .behclick-panel a:hover, .behclick-panel a:active{
+    text-decoration: none;
+}
+
+/*CSS product*/
+
+#products_right {
+    float: right;
+    width: 70%;
+}
+
+#products_right .header_khoi_sp {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+#products_right .header_khoi_sp .products_right_title {
+    font-size: 24px;
+}
+
+.header_khoi_sp .products_right_order_left {
+    float: left;
+    width: 50%;
+}
+
+.header_khoi_sp .prodict_right_order_right {
+    float: right;
+    width: 50%;
+}
+
+.header_khoi_sp select {
+    color: #727272;
+    border-radius: 3px;
+}
+
+label .label-select {
+    margin-right: 15px;
+}
+
+.header_khoi_sp a {
+    font-size: 13px;
+    margin: 0 3px 0 3px;
+    color: #f5a623;
+}
+
+.header_khoi_sp .card .motsanpham {
+    text-decoration: none;
+    color: black;
+}
+
+.header_khoi_sp .card .motsanpham img {
+
+}
