@@ -9,16 +9,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd39fdb7-6603-43df-a3a6-6a988444da36" name="Changes" comment="Nguyen Du Lap commit">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/forgotPassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/signUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,21 +48,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/LTW/final_exam/src/main/webapp/styles",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\LTW\final_exam\src\main\webapp\styles" />
@@ -193,8 +171,7 @@
       <workItem from="1666518075657" duration="2605000" />
       <workItem from="1666521936265" duration="249000" />
       <workItem from="1666539659517" duration="839000" />
-      <workItem from="1666542201155" duration="376000" />
-      <workItem from="1666861659151" duration="828000" />
+
     </task>
     <task id="LOCAL-00001" summary="Nguyen Du Lap commit">
       <created>1666540142287</created>
@@ -229,6 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nguyen Du Lap commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nguyen Du Lap commit" />
+    <MESSAGE value="20130307_NguyenThuyLinh commit code project" />
+    <option name="LAST_COMMIT_MESSAGE" value="20130307_NguyenThuyLinh commit code project" />
   </component>
 </project>
