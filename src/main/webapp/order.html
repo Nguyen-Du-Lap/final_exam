@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/Header.css">
+    <link rel="stylesheet" href="./styles/Order.css">
+    <link rel="stylesheet" href="./styles/Footer.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <!-- -----------phần header----------------  -->
+    <header>
+        <div id="header">
+            <div class="top-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <a class="logo" href="#">DORAEMON</a>
+                    <div class="top-header_search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="top-header-left">
+                        <div class="top-header_account">Tài khoản của bạn
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_account--item">
+                                <a href="" class="account--item_top">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <span>Tài khoản Facebook</span>
+                                </a>
+                                <a href="" class="account--item_center"><span>Đăng nhập</span></a>
+                                <div class="account--item_bottom">
+                                    <span>Khách hàng mới?</span>
+                                    <a class="register" href="">Tạo tài khoản</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-header_cart">Giỏ hàng
+                            <span class="top-header_cart-quantity">(0)</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_cart--item">
+                                <h4 class="cart--item_title">Giỏ hàng</h4>
+                                <hr>
+                                <a href="" class="cart--item_link">
+                                    <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header-left_media">
+                        <a href="">
+                            <div class="container-icon_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="sticker">0</div>
+                            </div>
+                        </a>
+                        <i onclick="openSearch()"
+                            class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
+                        <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="container_bg-search" class="container_bg-search">
+                <div class="container">
+                    <div class="top-header_search-media">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <span>Tìm kiếm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <div class="menu_products">
+                        <i class="fa-solid fa-bars"></i>
+                        Danh mục sản phẩm
+                        <nav class="menu_item">
+                            <ul class="type_products">
+                                <li class="type_products-item type_hots">
+                                    <span class="container_type-arrow">
+                                        <div>Nổi bật</div>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                    <ul class="type_hot-child">
+                                        <li><a href="">
+                                                <p>Sách bán chạy</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách mới</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sắp phát hành</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách giảm giá</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="type_products-item"><a href=""><span>Văn Học Nước Ngoài</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Văn Học Trong Nước</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Kĩ Năng Sống</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Sách Thiếu Nhi</span></a></li>
+                                <li class="type_products-item"><a href=""><span>Truyện Tranh</span></a></li>
+                                <li class="type_products-item type_companys">
+                                    <a href="">
+                                        <span class="container_type-arrow">
+                                            <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="type_companys-child">
+                                        <li><a href="">
+                                                <p>Công ty cổ phần zgroup</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Skybooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Chilbooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Thái Hà</p>
+                                            </a></li>
+                                        <li><a class="type_company-all" href="">
+                                                <p>Tất cả công ty phát hành</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="" class="hotline d-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Hotline: </h4>
+                        <span>0867 415 853</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- open sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="dropdown-btn">Tài khoản
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Đăng ký</a>
+                <a href="#">Đăng nhập</a>
+            </div>
+            <button class="dropdown-btn">Nổi bật
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Sách bán chạy</a>
+                <a href="#">Sách mới</a>
+                <a href="#">Sắp phát hành</a>
+                <a href="#">Sách giảm giá</a>
+            </div>
+            <a href="#">Văn học nước ngoài</a>
+            <a href="#">Sách văn học trong nước</a>
+            <a href="#">Sách kĩ năng sống</a>
+            <a href="#">Sách thiếu nhi</a>
+        </div>
+    </header>
+    <!--------- end header---------- -->
+    <div class="container content">
+        <h1 class="header_top">ĐẶT HÀNG</h1>
+        <div class="container_left">
+            <div class="cross"></div>
+            <h2 class="header_center">THÔNG TIN ĐƠN HÀNG</h2>
+            <form id="submit_form">
+                <div class="form-group input">
+                    <label for="name">Họ và tên: <span class="obligatory">(*)</span></label>
+                    <input type="text" class="form-control" id="name" placeholder="Họ và tên" onchange="nameOnChange(this.value)">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="phone">Điện thoại: <span class="obligatory">(*)</span></label>
+                    <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" onchange="phoneOnChange(this.value)">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="email">Email: <span class="obligatory">(*)</span></label>
+                    <input type="text" class="form-control" id="email" placeholder="Email" onchange="emailOnChange(this.value)" >
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="address">Địa chỉ nhận: <span class="obligatory">(*)</span></label>
+                    <input type="text" class="form-control" id="address" placeholder="Địa chỉ nhận" onchange="addressOnChange(this.value)">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="city">Tỉnh/Thành: <span class="obligatory">(*)</span></label>
+                    <select class="form-control form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn tỉnh thành</option>
+                    </select>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="district">Quận/Huyện: <span class="obligatory">(*)</span></label>
+                    <select class="form-control form-select form-select-sm mb-3" id="district"
+                        aria-label=".form-select-sm">
+                        <option value="" selected>Chọn quận huyện</option>
+                    </select>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="ward">Phường/Xã: <span class="obligatory">(*)</span></label>
+                    <select class="form-control form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn phường xã</option>
+                    </select>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="pack">Đóng gói: <span class="obligatory">(*)</span></label>
+                    <select class="form-control" id="pack" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn quy cách đóng gói</option>
+                        <option value="1">Bọc Blatic</option>
+                        <option value="2">Để nguyên seal</option>
+                    </select>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="pay">Hình thức thanh toán: <span class="obligatory">(*)</span></label>
+                    <select class="form-control" id="pay" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn hình thức</option>
+                        <option value="Chuyển khoản">Chuyển khoản</option>
+                        <option value="Cod: Giao hàng nhận tiền">Cod: Giao hàng nhận tiền</option>
+                    </select>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <small>Error</small>
+                </div>
+                <div class="form-group input">
+                    <label for="note">Ghi chú:</label>
+                    <textarea class="form-control" name="note" rows="3" cols="20" id="note"
+                        placeholder="Ghi chú về đơn hàng"></textarea>
+                </div>
+                <button type="submit" id="" class="bnt_sumit">ĐẶT HÀNG</button>
+            </form>
+        </div>
+        <div class="container_right">
+            <h4 class="header-code_sale">Áp dụng mã giảm giá</h4>
+            <div class="form-group">
+                <label style="font-size: 13px; margin-bottom: 2px; color: #1C1C1C;" for="code_sale">Nhập mã giảm giá tại đây</label>
+                <input type="text" class="form-control" id="code_sale" placeholder="Mã giảm giá">
+            </div>
+            <input id="btnUserCoupon" class="dr_button" type="button" value="ÁP DỤNG" onclick="check_code_sale();">
+
+            <h4 class="order_header">Chi tiết đơn</h4>
+            <div class="container_order">
+                <div class="wrap_oder">
+                    <h2 class="title">Đồng Vọng Dân Gian - Tập 1</h2>
+                    <div class="wrap">
+                        <span class="id fs_s">Mã SP: </span>
+                        <div class="fs_s" id="id">123</div>
+                    </div>
+                    <div class="wrap">
+                        <span class="quantity fs_s">Số lượng:</span>
+                        <div class="fs_s" id="quantity">12</div>
+                    </div>
+                    <div class="wrap" style="margin-bottom: 12px;">
+                        <span class="weight fs_s">Khối lượng:</span>
+                        <div class="fs_s" id="weight">0.5 Kg</div>
+                    </div>
+                    <hr>
+                    <div class="wrap_left">
+                        <div style="margin-top: 12px;" class="wrap mt">
+                            <span class="sum_price">Tổng tiền:</span>
+                            <div class="ml" id="sum_price">147.000 đ</div>
+                        </div>
+                        <div class="wrap mt">
+                            <span class="sum_transport">Phí vận chuyển:</span>
+                            <div class="ml" id="sum_transport">0 đ</div>
+                        </div>
+                        <div class="wrap mt">
+                            <span class="sum_order">Thanh toán:</span>
+                            <div class="ml" style="font-weight: 600; color: rgb(217, 11, 11);" id="sum_order">147.000 đ</div>
+                        </div>
+
+                    </div>
+                    <input id="bt-update_order" type="button" value="CHỈNH SỬA ĐƠN HÀNG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------footer ------------->
+    <section class="abovefooter text-white" style="background-color: #1a94ff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="imgs/footers/iconphone.png" alt="icon-books">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">HƠN 10000 MẪU ĐIỆN THOẠI </h6>
+                            <p class="detail">Tuyển chọn bởi MeKKiin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="imgs/footers/icon-ship.png" alt="icon-ship">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
+                            <p class="detail">Từ 150.000đ ở TP.HCM</p>
+                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="imgs/footers/icon-gift.png" alt="icon-gift">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">QUÀ TẶNG MIỄN PHÍ</h6>
+                            <p class="detail">Tặng 1 ốp lưng</p>
+                            <p class="detail">Miễn phí 5 stickers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="imgs/footers/icon-return.png" alt="icon-return">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">ĐỔI TRẢ NHANH CHÓNG</h6>
+                            <p class="detail">Hàng bị lỗi được đổi trả nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="gioithieu">
+                        <h6 class="header text-uppercase font-weight-bold">Về MeKKiin</h6>
+                        <a href="#">Giới thiệu về MeKKiin</a>
+                        <a href="#">Tuyển dụng</a>
+                        <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
+                            data-width="300px" data-layout="button" data-action="like" data-size="small"
+                            data-share="true"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="hotrokh">
+                        <h6 class="header text-uppercase font-weight-bold">HỖ TRỢ KHÁCH HÀNG</h6>
+                        <a href="#">Hướng dẫn đặt hàng</a>
+                        <a href="#">Phương thức thanh toán</a>
+                        <a href="#">Phương thức vận chuyển</a>
+                        <a href="#">Chính sách đổi trả</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="lienket">
+                        <h6 class="header text-uppercase font-weight-bold">HỢP TÁC VÀ LIÊN KẾT</h6>
+                        <img src="imgs/footers/dang-ky-bo-cong-thuong.png" alt="dang-ky-bo-cong-thuong">
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="ptthanhtoan">
+                        <h6 class="header text-uppercase font-weight-bold">Phương thức thanh toán</h6>
+                        <img src="imgs/footers/visa-payment.jpg" alt="visa-payment">
+                        <img src="imgs/footers/master-card-payment.jpg" alt="master-card-payment">
+                        <img src="imgs/footers/jcb-payment.jpg" alt="jcb-payment">
+                        <img src="imgs/footers/atm-payment.jpg" alt="atm-payment">
+                        <img src="imgs/footers/cod-payment.jpg" alt="cod-payment">
+                        <img src="imgs/footers/payoo-payment.jpg" alt="payoo-payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ----js phần header -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./scripts/order.js"></script>
+</body>
+
+</html>
