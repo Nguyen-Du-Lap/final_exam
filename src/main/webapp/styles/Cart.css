@@ -29,6 +29,7 @@ ul, li {
 
 #content {
     padding-top: 90px;
+    overflow: hidden;
 }
 
 .header_title {
