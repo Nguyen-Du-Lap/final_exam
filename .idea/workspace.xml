@@ -10,9 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd39fdb7-6603-43df-a3a6-6a988444da36" name="Changes" comment="Nguyen Du Lap commit">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/forgotPassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scripts/signUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/Cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +29,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -47,10 +60,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/NhungDuAnJava/final_exam",
+    "last_opened_file_path": "D:/LTW/final_exam/src/main/webapp/styles",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,10 +75,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LTW\final_exam\src\main\webapp\styles" />
+      <recent name="D:\LTW\final_exam\src\main\webapp\scripts" />
+      <recent name="D:\LTW\final_exam\src\main\webapp" />
+      <recent name="D:\LTW\final_exam\src\main\webapp\WEB-INF" />
       <recent name="D:\NhungDuAnJava\final_exam\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -161,9 +192,9 @@
       <updated>1666518074063</updated>
       <workItem from="1666518075657" duration="2605000" />
       <workItem from="1666521936265" duration="249000" />
-      <workItem from="1666539659517" duration="1558000" />
-      <workItem from="1666752959370" duration="38000" />
-      <workItem from="1666869338553" duration="152000" />
+      <workItem from="1666539659517" duration="839000" />
+      <workItem from="1666542201155" duration="376000" />
+      <workItem from="1666861659151" duration="828000" />
     </task>
     <task id="LOCAL-00001" summary="Nguyen Du Lap commit">
       <created>1666540142287</created>
