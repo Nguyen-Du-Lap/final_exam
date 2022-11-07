@@ -485,7 +485,19 @@ hr {
     /* .container_bg-search {
         display: block;
     } */
+    #breadcrumbbar {
+        width: 100%;
+    }
 
+    #content {
+        width: 100% ;
+    }
+}
+
+nav#breadcrumbbar, section#content {
+    max-width: 100em;
+    min-width: 100em;
+    margin: auto;
 }
 
 /*-------------------Breadcrumbbar*/
@@ -525,7 +537,6 @@ hr {
 }
 
 /*--------------------CONTENT------------------*/
-
 #content {
     margin-bottom: 0px;
     padding-top: 100px;
@@ -634,12 +645,81 @@ label .label-select {
     margin: 0 3px 0 3px;
     color: #f5a623;
 }
-
-.header_khoi_sp .card .motsanpham {
-    text-decoration: none;
-    color: black;
+/*khoi san pham*/
+.item {
+    margin-top: 15px;
+}
+.item .row .card:hover .anh {
+    top: 5px;
 }
 
-.header_khoi_sp .card .motsanpham img {
+img.card-img-top.anh {
+    position: relative;
+    top: 15px;
+    transition: 0.3s;
+    margin-top: -15px;
+}
 
+i.fa.fa-star {
+    font-size: 10px;
+    color: #bebebe;
+}
+
+li.active .fa-star {
+    color: #F5A623;
+
+}
+
+.item .row h3.card-title.ten {
+    font-size: 15px;
+    color: #007bff;
+    font-weight: 400;
+    margin-bottom: 4px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    transition: 0.3s;
+}
+
+.giacu.text-muted {
+    font-size: 13px;
+    color: #929291!important;
+}
+
+.giamoi {
+    color: #007bff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.gia.text-muted {
+    position: relative;
+}
+
+small.tacgia.text-muted {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    transition: 0.3s;
+    padding: 3px 0px;
+}
+
+.card-body.noidungsp {
+    padding: 10px 10px 0px 10px;
+}
+
+.card {
+    border-radius: 0;
+    margin: 0 10px;
+}
+
+.card:hover .ten {
+    color: #F5A623;
 }
