@@ -5,7 +5,6 @@ const password2 = document.getElementById('password2');
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const phoneNumber = document.getElementById('phoneNumber');
-const address = document.getElementById('address');
  
 form_signUp.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -18,8 +17,7 @@ function checkInputs() {
     const password2Value = password2.value.trim();
     const fnameValue = fname.value.trim();
     const lnameValue = lname.value.trim();
-    const phoneNumbeValuer = phoneNumber.value.trim();
-    const addressValue = address.value.trim();
+    const phoneNumberValue = phoneNumber.value.trim();
 
     if(emailValue === '') {
         setErrorFor(email, 'Vui lòng nhập vào email');
@@ -57,18 +55,10 @@ function checkInputs() {
         setSuccessForLName(lname);
     }
 
-    if(phoneNumbeValuer === '') {
-        setErrorFor(phoneNumber, 'Vui lòng nhập số điện thoại của bạn');
-    } else if(phoneNumbeValuer.length !== 10) {
-        setErrorFor(phoneNumber, 'Số điện thoại không hợp lệ')
+    if(!isPhoneNumber(phoneNumberValue)) {
+        setErrorFor(phoneNumber, 'Số điện thoại không hợp lệ');
     } else {
         setSuccessFor(phoneNumber);
-    }
-
-    if(addressValue === '') {
-        setErrorFor(address, 'Vui lòng nhập địa chỉ của bạn');
-    } else {
-        setSuccessFor(address);
     }
 }
 function setErrorFor(input, message) {
@@ -103,4 +93,7 @@ function setSuccessForLName(input) {
 }
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+function isPhoneNumber(phoneNumber) {
+    return /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phoneNumber);
 }
