@@ -216,9 +216,17 @@ ul, li {
     overflow: hidden;
 }
 
+.container_price {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
 .card-text_price {
     font-weight: 600;
     color: rgb(249, 71, 71);
+    margin-right: 12px;
 }
 
 .card-text_price--sale {
@@ -281,4 +289,28 @@ ul, li {
     background: #ccc;
 }
 
+
+/* danh gia san pham */
+.danhgia {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+i.fa.fa-star {
+    font-size: 10px;
+    color: #bebebe;
+}
+
+li.active .fa-star {
+    color: #F5A623;
+
+}
+
+span.text-muted {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
 

@@ -29,6 +29,7 @@ ul, li {
 
 #content {
     padding-top: 90px;
+    overflow: hidden;
 }
 
 .header_title {
@@ -69,7 +70,7 @@ ul, li {
     font-size: 9px;
     color: rgb(136, 135, 135);
     margin-top: 8px;
-
+    
 }
 
 #col_quantity {
@@ -165,6 +166,6 @@ td {
     .col_img img {
         width: 100%;
     }
-}
+  }
 
 
