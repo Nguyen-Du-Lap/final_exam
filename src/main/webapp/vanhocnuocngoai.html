@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Product_item.css">
+    <link rel="stylesheet" href="styles/Header.css">
+    <link rel="stylesheet" href="styles/Footer.css">
+</head>
+<body>
+<!----------------------------------------HEADER--------------------------------------->
+<header>
+    <div id="header">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between" style="align-items: center;">
+                <a class="logo" href="./home.html">DORAEMON</a>
+                <div class="top-header_search">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="top-header-left">
+                    <div class="top-header_account">Tài khoản của bạn
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="top-header_account--item">
+                            <a href="" class="account--item_top">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span style="font-size: 13px;">Tài khoản Facebook</span>
+                            </a>
+                            <a href="./login.html" class="account--item_center"><span>Đăng nhập</span></a>
+                            <div class="account--item_bottom">
+                                <span>Khách hàng mới?</span>
+                                <a class="register" href="./signup.html">Tạo tài khoản</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header_cart">Giỏ hàng
+                        <span class="top-header_cart-quantity">(0)</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="top-header_cart--item">
+                            <h4 class="cart--item_title">Giỏ hàng</h4>
+                            <hr>
+                            <a href="./cart.html" class="cart--item_link">
+                                <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-header-left_media">
+                    <a href="">
+                        <div class="container-icon_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="sticker">0</div>
+                        </div>
+                    </a>
+                    <i onclick="openSearch()" class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
+                    <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div id="container_bg-search" class="container_bg-search">
+            <div class="container">
+                <div class="top-header_search-media">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <span>Tìm kiếm</span>
+                </div>
+            </div>
+        </div>
+        <div class="center-header">
+            <div class="container d-flex justify-content-between" style="align-items: center; padding: 0 15px;">
+                <div class="menu_products" style="float: left; width: 50%; font-size: 16px; margin-left: -145px; background-color: #f2f2f2">
+                    <i class="fa-solid fa-bars"></i>
+                    Danh mục sản phẩm
+                    <nav class="menu_item">
+                        <ul class="type_products">
+
+                            <li class="type_products-item type_hots">
+                                        <span class="container_type-arrow">
+                                            <div>Nổi bật</div>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                <ul class="type_hot-child">
+                                    <li><a href="">
+                                        <p>Sách bán chạy</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sách mới</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sắp phát hành</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sách giảm giá</p>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Nước Ngoài</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Trong Nước</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Tâm Lý Kĩ Năng Sống</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Thiếu Nhi</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Kinh Tế</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Lịch Sử - Địa Lý - Tôn Giáo</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Khoa Học Kỹ Thuật</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Truyện Tranh</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Tập Chí - Báo</span></a></li>
+                            <li class="type_products-item type_companys">
+                                <a href="">
+                                            <span class="container_type-arrow">
+                                                <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                            </span>
+                                </a>
+                                <ul class="type_companys-child">
+                                    <li><a href="">
+                                        <p>Công ty cổ phần zgroup</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Skybooks</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Chilbooks</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Thái Hà</p>
+                                    </a></li>
+                                    <li><a class="type_company-all" href="">
+                                        <p>Tất cả công ty phát hành</p>
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="" style="margin-right: -70px;" class="hotline d-flex" >
+                    <i class="fa-solid fa-phone"></i>
+                    <h4 style="padding: 0;">Hotline: </h4>
+                    <span>0867 415 853</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- open sidenav -->
+    <div id="mySidenav" class="sidenav" style="overflow: hidden;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="dropdown-btn">Tài khoản
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Đăng ký</a>
+            <a href="#">Đăng nhập</a>
+        </div>
+        <button class="dropdown-btn">Nổi bật
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Sách bán chạy</a>
+            <a href="#">Sách mới</a>
+            <a href="#">Sắp phát hành</a>
+            <a href="#">Sách giảm giá</a>
+        </div>
+        <a href="#">Sách Văn Học Nước Ngoài</a>
+        <a href="#">Sách Văn Học Trong Nước</a>
+        <a href="#">Sách Tâm Lý Kĩ Năng Sống</a>
+        <a href="#">Sách Thiếu Nhi</a>
+        <a href="#">Sách Kinh Tế</a>
+        <a href="#">Lịch Sử - Địa Lý - Tôn Giáo</a>
+        <a href="#">Khoa Học Kỹ Thuật</a>
+        <a href="#">Truyện Tranh</a>
+        <a href="#">Tập Chí - Báo</a>
+    </div>
+</header>
+<!--------- end header---------- -->
+
+<!-- ----------breadcrumb ------------ -->
+<nav id="breadcrumbbar">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a class="chang_font" href="home.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active"><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+        </ul>
+    </div>
+</nav>
+<!--  End Breadcrumb  -->
+
+
+<section id="content" style="width: 100%">
+    <div class="container">
+        <section id="products_left">
+            <div class="container1">
+                <div id="accordion">
+                    <div class="cap">Tác giả</div>
+                    <div class="ct">
+                        <label><input type="checkbox" class="tacgia" value="Apple">Victor Hugo</label>
+                        <label><input type="checkbox" class="tacgia" value="OPPO">J.K. Rowling</label>
+                        <label><input type="checkbox" class="tacgia" value="Samsung">Đinh Mặc</label>
+                        <label><input type="checkbox" class="tacgia" value="Xiaomi">Cố Tây Tước</label>
+                        <label><input type="checkbox" class="tacgia" value="Vivo">Emily Bronte</label>
+                    </div>
+                    <div class="cap">Giá bán</div>
+                    <div class="ct">
+                        <label><input type="checkbox" class="giaban" value="1">Dưới 100.000đ</label>
+                        <label><input type="checkbox" class="giaban" value="2">Từ 100.000đ đến 200.000đ</label>
+                        <label><input type="checkbox" class="giaban" value="3">Từ 200.000đ đến 300.000đ</label>
+                        <label><input type="checkbox" class="giaban" value="4">Trên 300.000đ</label>
+                    </div>
+                    <div class="cap">Nhà xuất bản</div>
+                    <div class="ct">
+                        <label><input type="checkbox" class="nxb" value="1">NXB Phụ nữ Việt Nam</label>
+                        <label><input type="checkbox" class="nxb" value="2">NXB Thông Tấn</label>
+                        <label><input type="checkbox" class="nxb" value="3">Nhà xuất bản Hà Nôi</label>
+                        <label><input type="checkbox" class="nxb" value="4">NXB Văn Học</label>
+                    </div>
+                    <div class="cap">Phát Hành</div>
+                    <div class="ct">
+                        <label><input type="checkbox" class="phathanh" value="1">Nhã Nam</label>
+                        <label><input type="checkbox" class="phathanh" value="2">Skybooks</label>
+                        <label><input type="checkbox" class="phathanh" value="3">AZ VietNam</label>
+                        <label><input type="checkbox" class="phathanh" value="4">Việt Thư</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products_right">
+            <div class="container2">
+                <div class="noidung bg-white">
+                    <!--Header cua khoi san phan-->
+                    <div class="header_khoi_sp">
+                        <div class="products_right_title">
+                            <h3>VĂN HỌC NƯỚC NGOÀI</h3>
+                        </div>
+                        <div class="products_right_order_left">
+                            <i class="fa fa-th-large" aria-hidden="true"></i>
+                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                        </div>
+                        <div class="prodict_right_order_right">
+                            <label for="hienthi_select" class="label-select">Xem theo</label>
+                            <select name="xem_theo" id="xem_theo">
+                                <option value="macdinh">Mặc định</option>
+                                <option value="cao-thap">Giá từ cao đến thấp</option>
+                                <option value="thap-cao">Giá từ thấp đến cao</option>
+                                <option value="moinhat">Mới nhất</option>
+                                <option value="cunhat">Cũ nhất</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Cac san pham-->
+                    <div class="items">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Những người khốn khổ">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/nhungnguoikhonkho1.jpeg"
+                                             alt="Những người khốn khổ">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Những người khốn khổ</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Victo
+                                                Hugo</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">273.000đ <br></div>
+                                                <div class="giacu text-muted"> 390.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item dinhmac">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom"
+                                       title="Hãy Nhắm Mắt Khi Anh Đến - Tập 1 (Tái Bản 2019)">
+                                        <img class="card-img-top anh"
+                                             src="images/vanhocnuocngoai/hay_nham_mat_khi_anh_den___tap_1_tai_ban_2019_1_2020_06_19_17_07_25.jpeg"
+                                             alt="Hãy Nhắm Mắt Khi Anh Đến - Tập 1 (Tái Bản 2019)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Hãy Nhắm Mắt Khi Anh Đến - Tập 1 (Tái Bản
+                                                2019)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Đinh Mặc</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">122.000đ <br></div>
+                                                <div class="giacu text-muted"> 129.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item emily-bronte">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Đồi Gió Hú">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/doigiohu.jpeg"
+                                             alt="Đồi Gió Hú">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Đồi Gió Hú</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Emily
+                                                Bronte</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">113.000đ <br></div>
+                                                <div class="giacu text-muted"> 119.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item dinhmac">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Hãy Nhắm Mắt Khi Anh Đến - Tập 2 (Tái Bản 2018)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/hay_nham_mat_khi_anh_den___tap_2_tai_ban_2018_1_2018_11_13_11_13_44.jpeg"
+                                             alt="Hãy Nhắm Mắt Khi Anh Đến - Tập 2 (Tái Bản 2018)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Hãy Nhắm Mắt Khi Anh Đến - Tập 2 (Tái Bản 2018)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">
+                                                Đinh Mặc</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">122.000đ <br></div>
+                                                <div class="giacu text-muted"> 129.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item jkrowling">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Harry Potter Và Bảo Bối Tử Thần - Tập 7 (Tái bản)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/harrypotterbaoboituthan.jpeg"
+                                             alt="Harry Potter Và Bảo Bối Tử Thần - Tập 7 (Tái bản)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Harry Potter Và Bảo Bối Tử Thần - Tập 7 (Tái bản)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">J.K.Rowling
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">247.000đ <br></div>
+                                                <div class="giacu text-muted"> 285.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item jkrowling">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Harry Potter Và Phòng Chứa Bí Mật - Tập 2(Tái Bản 2017)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/harrypottertap2.jpeg"
+                                             alt="Harry Potter Và Phòng Chứa Bí Mật - Tập 2(Tái Bản 2017)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Harry Potter Và Phòng Chứa Bí Mật - Tập 2(Tái Bản 2017)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">J.K.Rowling</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">133.000đ <br></div>
+                                                <div class="giacu text-muted"> 150.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Nhà Thờ Đức Bà Paris">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/nhathoducbaparis.jpeg"
+                                             alt="Nhà Thờ Đức Bà Paris">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Nhà Thờ Đức Bà Paris</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Victo
+                                                Hugo</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">423.000đ <br></div>
+                                                <div class="giacu text-muted"> 650.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item dinhmac">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Mèo Hoang 1 (Tái Bản 2018)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/MeoHoangtap1.jpeg"
+                                             alt="Mèo Hoang 1 (Tái Bản 2018)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Mèo Hoang 1 (Tái Bản 2018)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Đinh Mặc</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">136.000đ <br></div>
+                                                <div class="giacu text-muted"> 144.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="12 NĂM NÔ LỆ">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/12-nam-no-le-bia_ef51396ce77843018c48f7db6f7a4d3e_master.webp"
+                                             alt="12 NĂM NÔ LỆ">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">12 NĂM NÔ LỆ</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Solomon Northup</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">73.800đ <br></div>
+                                                <div class="giacu text-muted"> 82.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="1 CM GIỮA ANH VÀ EM">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/1cmanhvaem.webp"
+                                             alt="1 CM GIỮA ANH VÀ EM">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">1 CM GIỮA ANH VÀ EM</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Kim Eun Ju
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">144.000đ <br></div>
+                                                <div class="giacu text-muted"> 160.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Harry Potter Và Hòn Đá Phù Thuỷ - Tập 1 (Tái Bản)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/harrypotterhondaphuthuy.jpeg"
+                                             alt="Harry Potter Và Hòn Đá Phù Thuỷ - Tập 1 (Tái Bản)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Harry Potter Và Hòn Đá Phù Thuỷ - Tập 1 (Tái Bản)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">J.K.Rowling
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">126.000đ <br></div>
+                                                <div class="giacu text-muted"> 150.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/tentunhan.jpeg"
+                                             alt="Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">J.K.Rowling
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">178.000đ <br></div>
+                                                <div class="giacu text-muted"> 205.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Anh Luôn Ở Bên Em - Tặng Kèm Bookmark Lá">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/anhluonobenem.jpeg"
+                                             alt="Anh Luôn Ở Bên Em - Tặng Kèm Bookmark Lá">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Anh Luôn Ở Bên Em - Tặng Kèm Bookmark Lá</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Cố Tây Tước
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">141.000đ <br></div>
+                                                <div class="giacu text-muted"> 149.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="All In Love">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/allinlove.jpeg"
+                                             alt="All In Love">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">All In Love - Ngập Tràn Yêu Thương (Tái Bản 2020)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Cố Tây Tước
+                                            </small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">119.000đ <br></div>
+                                                <div class="giacu text-muted"> 119.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Bức Thư Bị Lãng Quên (Tái Bản Kèm Ngoại Truyện)">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/bucthubilangquen.jpeg"
+                                             alt="Bức Thư Bị Lãng Quên (Tái Bản Kèm Ngoại Truyện)">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Bức Thư Bị Lãng Quên (Tái Bản Kèm Ngoại Truyện)</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Cố Tây Tước</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">119.000đ <br></div>
+                                                <div class="giacu text-muted"> 126.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-xs-6 item victo-hugo">
+                                <div class="card">
+                                    <a href="Product_details.html" class="motsanpham"
+                                       data-toggle="tooltip" data-placement="bottom" title="Thằng Cười">
+                                        <img class="card-img-top anh" src="images/vanhocnuocngoai/thangcuoi.jpeg"
+                                             alt="Thằng Cười">
+                                        <div class="card-body noidungsp mt-3">
+                                            <h6 class="card-title ten">Thằng Cười</h6>
+                                            <small class="tacgia text-muted" style="font-weight: bold">Victo
+                                                Hugo</small>
+                                            <div class="card-price d-flex align-items-baseline">
+                                                <div class="giamoi">197.000đ <br></div>
+                                                <div class="giacu text-muted"> 208.000đ</div>
+                                            </div>
+                                        </div>
+                                        <div class="danhgia">
+                                            <ul class="d-flex" style="list-style: none">
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li class="active"><i class="fa fa-star"></i></li>
+                                                <li><span class="text-muted">  20 nhận xét</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+          <span>
+          <a class="index" href="#">1</a>
+          <a class="index" href="#">2</a>
+          <a class="index" href="#">3</a>
+          <a class="index" href="#">4</a>
+          <a class="index" href="#">5</a>
+          </span>
+                        <svg viewBox="0 0 100 100">
+                            <path
+                                    d="m 7.1428558,49.999998 c -1e-7,-23.669348 19.1877962,-42.8571447 42.8571442,-42.8571446 23.669347,0 42.857144,19.1877966 42.857144,42.8571446"/>
+                        </svg>
+                        <svg viewBox="0 0 100 100">
+                            <path
+                                    d="m 7.1428558,49.999998 c -1e-7,23.669347 19.1877962,42.857144 42.8571442,42.857144 23.669347,0 42.857144,-19.187797 42.857144,-42.857144"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<!--</div>-->
+
+<footer>
+    <section class="abovefooter text-white" style="background-color: #1a94ff; margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/iconphone.png" alt="icon-books" style="border-radius: 100%;">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">HƠN 10000 LOẠI SÁCH </h6>
+                            <p class="detail">Tuyển chọn bởi Doraemon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-ship.png" alt="icon-ship">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
+                            <p class="detail">Từ 150.000đ ở TP.HCM</p>
+                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-gift.png" alt="icon-gift">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">QUÀ TẶNG MIỄN PHÍ</h6>
+                            <p class="detail">Tặng kèm bìa bao sách</p>
+                            <p class="detail">Miễn phí 5 stickers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-return.png" alt="icon-return">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">ĐỔI TRẢ NHANH CHÓNG</h6>
+                            <p class="detail">Hàng bị lỗi được đổi trả nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="gioithieu">
+                    <h6 class="header text-uppercase font-weight-bold">Về Doraemon</h6>
+                    <a href="#">Giới thiệu về Doraemon</a>
+                    <a href="#">Tuyển dụng</a>
+                    <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
+                         data-width="300px" data-layout="button" data-action="like" data-size="small"
+                         data-share="true"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="hotrokh">
+                    <h6 class="header text-uppercase font-weight-bold">HỖ TRỢ KHÁCH HÀNG</h6>
+                    <a href="#">Hướng dẫn đặt hàng</a>
+                    <a href="#">Phương thức thanh toán</a>
+                    <a href="#">Phương thức vận chuyển</a>
+                    <a href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="lienket">
+                    <h6 class="header text-uppercase font-weight-bold">HỢP TÁC VÀ LIÊN KẾT</h6>
+                    <img src="images/footers/dang-ky-bo-cong-thuong.png" alt="dang-ky-bo-cong-thuong">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="ptthanhtoan">
+                    <h6 class="header text-uppercase font-weight-bold">Phương thức thanh toán</h6>
+                    <img src="images/footers/visa-payment.jpg" alt="visa-payment">
+                    <img src="images/footers/master-card-payment.jpg" alt="master-card-payment">
+                    <img src="images/footers/jcb-payment.jpg" alt="jcb-payment">
+                    <img src="images/footers/atm-payment.jpg" alt="atm-payment">
+                    <img src="images/footers/cod-payment.jpg" alt="cod-payment">
+                    <img src="images/footers/payoo-payment.jpg" alt="payoo-payment">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- nut cuon len dau trang -->
+<div class="fixed-bottom">
+    <div class="btn btn-warning float-right rounded-circle nutcuonlen" id="backtotop" href="#"
+         style="background:#0f81e5;"><i
+            class="fa fa-chevron-up text-white"></i></div>
+</div>
+
+<!--    footer-->
+
+<!-- ----js phần header -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script src="./scripts/header.js"></script>
+<script src="scripts/product_type.js"></script>
+
+<script !src="">
+    const c = document.querySelector('.pagination')
+    const indexs = Array.from(document.querySelectorAll('.index'))
+    let cur = -1
+    indexs.forEach((index, i) => {
+        index.addEventListener('click', (e) => {
+            // clear
+            c.className = 'pagination'
+            void c.offsetWidth; // Reflow
+            c.classList.add('open')
+            c.classList.add(`i${i + 1}`)
+            if (cur > i) {
+                c.classList.add('flip')
+            }
+            cur = i
+        })
+    })
+</script>
+</body>
+</html>

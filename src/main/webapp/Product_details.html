@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Những Người Khốn Khổ</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Footer.css">
+    <link rel="stylesheet" href="styles/Header.css">
+    <link rel="stylesheet" href="styles/product.css">
+
+</head>
+<body>
+
+<header>
+    <div id="header">
+        <div class="top-header">
+            <div class="container d-flex justify-content-between" style="align-items: center;">
+                <a class="logo" href="./home.html">DORAEMON</a>
+                <div class="top-header_search">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="top-header-left">
+                    <div class="top-header_account">Tài khoản của bạn
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="top-header_account--item">
+                            <a href="#" class="account--item_top">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span style="font-size: 13px;">Tài khoản Facebook</span>
+                            </a>
+                            <a href="./login.html" class="account--item_center"><span>Đăng nhập</span></a>
+                            <div class="account--item_bottom">
+                                <span>Khách hàng mới?</span>
+                                <a class="register" href="./signup.html">Tạo tài khoản</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-header_cart">Giỏ hàng
+                        <span class="top-header_cart-quantity">(0)</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="top-header_cart--item">
+                            <h4 class="cart--item_title">Giỏ hàng</h4>
+                            <hr>
+                            <a href="./cart.html" class="cart--item_link">
+                                <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-header-left_media">
+                    <a href="">
+                        <div class="container-icon_cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="sticker">0</div>
+                        </div>
+                    </a>
+                    <i onclick="openSearch()" class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
+                    <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div id="container_bg-search" class="container_bg-search">
+            <div class="container">
+                <div class="top-header_search-media">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <span>Tìm kiếm</span>
+                </div>
+            </div>
+        </div>
+        <div class="center-header">
+            <div class="container d-flex justify-content-between" style="align-items: center;">
+                <div class="menu_products">
+                    <i class="fa-solid fa-bars"></i>
+                    Danh mục sản phẩm
+                    <nav class="menu_item">
+                        <ul class="type_products">
+                            <li class="type_products-item type_hots">
+                                        <span class="container_type-arrow">
+                                            <div>Nổi bật</div>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                <ul class="type_hot-child">
+                                    <li><a href="">
+                                        <p>Sách bán chạy</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sách mới</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sắp phát hành</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Sách giảm giá</p>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Nước Ngoài</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Trong Nước</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Tâm Lý Kĩ Năng Sống</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Thiếu Nhi</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Kinh Tế</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Lịch Sử - Địa Lý - Tôn Giáo</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Khoa Học Kỹ Thuật</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Truyện Tranh</span></a></li>
+                            <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Tập Chí - Báo</span></a></li>
+                            <li class="type_products-item type_companys">
+                                <a href="">
+                                            <span class="container_type-arrow">
+                                                <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                            </span>
+                                </a>
+                                <ul class="type_companys-child">
+                                    <li><a href="">
+                                        <p>Công ty cổ phần zgroup</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Skybooks</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Chilbooks</p>
+                                    </a></li>
+                                    <li><a href="">
+                                        <p>Thái Hà</p>
+                                    </a></li>
+                                    <li><a class="type_company-all" href="">
+                                        <p>Tất cả công ty phát hành</p>
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="" class="hotline d-flex">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Hotline: </h4>
+                    <span>0867 415 853</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- open sidenav -->
+    <div id="mySidenav" class="sidenav" style="overflow: hidden;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="dropdown-btn">Tài khoản
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Đăng ký</a>
+            <a href="#">Đăng nhập</a>
+        </div>
+        <button class="dropdown-btn">Nổi bật
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Sách bán chạy</a>
+            <a href="#">Sách mới</a>
+            <a href="#">Sắp phát hành</a>
+            <a href="#">Sách giảm giá</a>
+        </div>
+        <a href="#">Sách Văn Học Nước Ngoài</a>
+        <a href="#">Sách Văn Học Trong Nước</a>
+        <a href="#">Sách Tâm Lý Kĩ Năng Sống</a>
+        <a href="#">Sách Thiếu Nhi</a>
+        <a href="#">Sách Kinh Tế</a>
+        <a href="#">Lịch Sử - Địa Lý - Tôn Giáo</a>
+        <a href="#">Khoa Học Kỹ Thuật</a>
+        <a href="#">Truyện Tranh</a>
+        <a href="#">Tập Chí - Báo</a>
+    </div>
+</header>
+<!-------------------------Product----------------------->
+<section class="product">
+    <div class="container">
+        <nav id="breadcrumbbar">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a class="chang_font" href="home.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+                <li class="breadcrumb-item active"><a href="Product_details.html">Những người khốn khổ</a></li>
+            </ul>
+        </nav>
+        <div class="product-content row">
+            <div class="product-content-left">
+                <div class="product-content-left-big-img">
+                    <img src="images/vanhocnuocngoai/nhungnguoikhonkho1.jpeg" alt="">
+                </div>
+                <div class="product-content-left-small-img d-flex">
+                    <img src="images/vanhocnuocngoai/nhungnguoikhonkho1.jpeg" alt="" style="margin-top: 10px">
+                    <img src="images/vanhocnuocngoai/nhungnguoikhonkho3.jpeg" alt="" style="margin-top: 10px">
+                    <img src="images/vanhocnuocngoai/nhungnguoikhonkho4.jpeg" alt="" style="margin-top: 10px">
+                    <img src="images/vanhocnuocngoai/nnkk6.jpeg" alt="" style="margin-top: 10px">
+
+                </div>
+            </div>
+            <div class="product-content-right">
+                <div class="product-content-right-product-name">
+                    <h1>NHỮNG NGƯỜI KHỐN KHỔ (TRỌN BỘ 3 TẬP)</h1>
+                    <p>MSP: 8935095623938</p>
+                </div>
+                <div class="product-content-right-product-rate">
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star active"></i>
+                    <i class="fa fa-star "></i>
+                </div>
+                <hr>
+                <div class="product-content-right-product-price">
+                    <div class="giabia">Giá:<span class="giacu ml-2">390.000 ₫</span></div>
+                    <div class="giaban">Giá bán tại Doraemon: <span class="giamoi font-weight-bold">370.000 đ</span></div>
+                    <div class="tietkiem">Tiết kiệm: <b>20.000 ₫</b>
+                    </div>
+                </div>
+                <div class="product-content-right-uudai">
+                    <h6 class="header font-weight-bold">Khuyến mãi & Ưu đãi tại Doraemon:</h6>
+                    <ul>
+                        <li><b>Miễn phí giao hàng </b>cho đơn hàng từ 150.000đ ở TP.HCM và 300.000đ ở
+                            Tỉnh/Thành khác <a href="home.html">>> Chi tiết</a></li>
+                        <li><b>Combo sách hot - CHÁY HÀNG </b><a href="home.html">>>Xem ngay</a></li>
+                        <li>Tặng kèm bìa bao sách</li>
+                        <li>Miễn phí 5 stickers</li>
+                        <li>Miễn phí đổi trả nếu sách bị lỗi hoặc hỏng</li>
+                    </ul>
+                </div>
+                <div class="product-content-right-soluong d-flex">
+                    <label class="font-weight-bold">Số lượng: </label>
+                    <div class="input-number input-group md-3 quantity">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text btn-spin btn-dec">-</span>
+                        </div>
+                        <input type="text" value="1" class="soluongsp  text-center">
+                        <div class="input-group-append">
+                            <span class="input-group-text btn-spin btn-inc">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-right-product-button row">
+                    <button><i class="fas fa-shopping-cart"></i><p>THÊM VÀO GIỎ HÀNG</p></button>
+                    <button class="muangay"><p>MUA NGAY</p></button>
+                </div>
+                <div class="product-content-right-product-icon d-flex">
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="far fa-comment"></i> <p>Chat</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="far fa-envelope"></i> <p>Mail</p>
+
+                    </div>
+                </div>
+                <div class="product-content-right-product-bottom">
+                    <div class="product-content-right-product-bottom-top">
+                        &#8744;
+                    </div>
+                    <div class="product-content-right-product-bottom-content-big">
+                        <div class="product-content-right-product-bottom-content-title row">
+                            <div class="product-content-right-product-bottom-content-title-item mota">
+                                <p>Mô tả</p>
+                            </div>
+                            <div class="product-content-right-product-bottom-content-title-item danhgia">
+                                <p>Đánh giá, bình luận</p>
+                            </div>
+                        </div>
+                        <div class="product-content-right-product-bottom-content">
+                            <div class="product-content-right-bottom-content-mota">
+                                <div class="product-content-right-product-bottom-content-thongtinsp">
+                                    <table>
+                                        <thead>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="themmau">Mã hàng</td>
+                                            <td>8935095623938</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">Tác giả</td>
+                                            <td>Victor Hugo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">NXB</td>
+                                            <td>NXB Văn Học</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">Năm XB</td>
+                                            <td>2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">Trọng Lượng (gr)</td>
+                                            <td>2220</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">Kích Thước Bao Bì</td>
+                                            <td>21 x 14 x 10.5 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="themmau">Số trang</td>
+                                            <td>2054</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="product-content-right-product-bottom-content-chitiet">
+                                    Trong tác phẩm NHỮNG NGƯỜI KHỐN KHỔ (Les Misérables), cuộc sống cao đẹp của Giăng Văngiăng (Jean Valjean) - người phải ngồi tù suốt 19 năm chỉ vì một chiếc bánh mỳ, tình nhân ái bao dung và tấm lòng độ lượng của đức cha Mirien, sự đeo bám dai dẳng của mật thám Giave (Javert), những mưu đồ đen tối và độc ác của vợ chồng Tênácđiê (Thenardier), sự ngây thơ trong trắng của Côdét (Cosette), cậu bé lang thang Ga-vơ-rốt (Gavroche). sự nhiệt tình hăng hái của Mariuýt (Marius)...
+                                    Tất cả đều được khắc họa một cách sinh động. NHỮNG NGƯỜI KHỐN KHỔ là bài hát ca ngợi tình yêu và tự do của Giăng Văngiăng - một con người tái sinh trong đau khổ và tuyệt vọng.
+                                </div>
+                            </div>
+
+                            <div class="product-content-right-product-bottom-content-danhgia">
+                                <div class="product-content-right-product-bottom-content-rate d-fex">
+                                    <div class="text-center danhgia">
+                                        <p class="tieude">Đánh giá trung bình</p>
+                                        <div class="diem">0/5</div>
+                                        <div class="sao">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="sonhanxet text-muted">(0 nhận xét)</p>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="tiledanhgia text-center">
+                                            <div class="motthanh d-flex align-items-center">5 <i class="fa fa-star"></i>
+                                                <div class="progress mx-2">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div> 0%
+                                            </div>
+                                            <div class="motthanh d-flex align-items-center">4 <i class="fa fa-star"></i>
+                                                <div class="progress mx-2">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div> 0%
+                                            </div>
+                                            <div class="motthanh d-flex align-items-center">3 <i class="fa fa-star"></i>
+                                                <div class="progress mx-2">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div> 0%
+                                            </div>
+                                            <div class="motthanh d-flex align-items-center">2 <i class="fa fa-star"></i>
+                                                <div class="progress mx-2">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div> 0%
+                                            </div>
+                                            <div class="motthanh d-flex align-items-center">1 <i class="fa fa-star"></i>
+                                                <div class="progress mx-2">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div> 0%
+                                            </div>
+                                            <div class="btn vietdanhgia mt-3">Viết đánh giá của bạn</div>
+                                        </div>
+                                        <!-- nội dung của form đánh giá  -->
+                                        <div class="formdanhgia">
+                                            <h6 class="tieude text-uppercase">GỬI ĐÁNH GIÁ CỦA BẠN</h6>
+                                            <span class="danhgiacuaban">Đánh giá của bạn về sản phẩm này:</span>
+                                            <div class="rating d-flex flex-row-reverse align-items-center justify-content-end">
+                                                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                                                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                                                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                                                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                                                <input type="radio" name="star" id="star5"><label for="star5"></label>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="txtFullname w-100" placeholder="Mời bạn nhập tên(Bắt buộc)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="txtEmail w-100" placeholder="Mời bạn nhập email(Bắt buộc)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="txtComment w-100" placeholder="Đánh giá của bạn về sản phẩm này">
+                                            </div>
+                                            <div class="btn nutguibl"><p>Gửi bình luận</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section class="abovefooter text-white" style="background-color: #1a94ff; margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/iconphone.png" alt="icon-books" style="border-radius: 100%;">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">HƠN 10000 LOẠI SÁCH </h6>
+                            <p class="detail">Tuyển chọn bởi Doraemon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-ship.png" alt="icon-ship">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
+                            <p class="detail">Từ 150.000đ ở TP.HCM</p>
+                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-gift.png" alt="icon-gift">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">QUÀ TẶNG MIỄN PHÍ</h6>
+                            <p class="detail">Tặng kèm bìa bao sách</p>
+                            <p class="detail">Miễn phí 5 stickers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="dichvu d-flex align-items-center">
+                        <img src="images/footers/icon-return.png" alt="icon-return">
+                        <div class="noidung">
+                            <h6 class="tieude font-weight-bold">ĐỔI TRẢ NHANH CHÓNG</h6>
+                            <p class="detail">Hàng bị lỗi được đổi trả nhanh chóng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="gioithieu">
+                    <h6 class="header text-uppercase font-weight-bold">Về Doraemon</h6>
+                    <a href="#">Giới thiệu về Doraemon</a>
+                    <a href="#">Tuyển dụng</a>
+                    <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
+                         data-width="300px" data-layout="button" data-action="like" data-size="small"
+                         data-share="true"></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="hotrokh">
+                    <h6 class="header text-uppercase font-weight-bold">HỖ TRỢ KHÁCH HÀNG</h6>
+                    <a href="#">Hướng dẫn đặt hàng</a>
+                    <a href="#">Phương thức thanh toán</a>
+                    <a href="#">Phương thức vận chuyển</a>
+                    <a href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="lienket">
+                    <h6 class="header text-uppercase font-weight-bold">HỢP TÁC VÀ LIÊN KẾT</h6>
+                    <img src="images/footers/dang-ky-bo-cong-thuong.png" alt="dang-ky-bo-cong-thuong">
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <div class="ptthanhtoan">
+                    <h6 class="header text-uppercase font-weight-bold">Phương thức thanh toán</h6>
+                    <img src="images/footers/visa-payment.jpg" alt="visa-payment">
+                    <img src="images/footers/master-card-payment.jpg" alt="master-card-payment">
+                    <img src="images/footers/jcb-payment.jpg" alt="jcb-payment">
+                    <img src="images/footers/atm-payment.jpg" alt="atm-payment">
+                    <img src="images/footers/cod-payment.jpg" alt="cod-payment">
+                    <img src="images/footers/payoo-payment.jpg" alt="payoo-payment">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- nut cuon len dau trang -->
+<div class="fixed-bottom">
+    <div class="btn btn-warning float-right rounded-circle nutcuonlen" id="backtotop" href="#" style="background:#0f81e5;"><i
+            class="fa fa-chevron-up text-white"></i></div>
+</div>
+
+<!--    footer-->
+
+<!-- ----js phần header -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="scripts/product_type.js"></script>
+
+<script src="scripts/product.js"></script>
+
+</body>
+</html>
