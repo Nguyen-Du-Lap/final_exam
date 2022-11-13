@@ -122,6 +122,11 @@ td {
     font-weight: 600;
 }
 
+.order a, .add_product a {
+    text-decoration: none;
+    color: #ccc;
+}
+
 .order {
     background-color: rgb(218, 2, 2);
     color: #fff;
@@ -132,7 +137,6 @@ td {
 
 .add_product {
     background-color: #fff;
-    color: #ccc;
     text-align: center;
     padding: 8px 42px;
     border: 1px solid #ccc;
@@ -144,10 +148,13 @@ td {
     opacity: 0.8;
 }
 
-.add_product:hover {
+.add_product:hover, .add_product:focus {
     background-color: rgb(218, 2, 2);
-    color: #fff;
     cursor: pointer;
+}
+
+.add_product a:hover, .order a:hover {
+    color: #FFFFFF;
 }
 
 .table td, .table th {
