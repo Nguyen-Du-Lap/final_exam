@@ -2,169 +2,180 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Sign Up</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/Login.css">
     <link rel="stylesheet" href="styles/Header.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="./styles/Footer.css">
 
 </head>
 
 <body>
     <!-- -----------phần header----------------  -->
-
-    <div id="header">
-        <div class="top-header">
-            <div class="container d-flex justify-content-between" style="align-items: center;">
-                <a class="logo" href="#">DORAEMON</a>
-                <div class="top-header_search">
-                    <input type="text" placeholder="Tìm kiếm">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="top-header-left">
-                    <div class="top-header_account">Tài khoản của bạn
-                        <i class="fa-solid fa-caret-down"></i>
-                        <div class="top-header_account--item">
-                            <a href="" class="account--item_top">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <span>Tài khoản Facebook</span>
-                            </a>
-                            <a href="" class="account--item_center"><span>Đăng nhập</span></a>
-                            <div class="account--item_bottom">
-                                <span>Khách hàng mới?</span>
-                                <a class="register" href="">Tạo tài khoản</a>
+    <header>
+        <div id="header">
+            <div class="top-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <a class="logo" href="./home.html">DORAEMON</a>
+                    <div class="top-header_search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="top-header-left">
+                        <div class="top-header_account">Tài khoản của bạn
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_account--item">
+                                <a href="" class="account--item_top">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <span>Tài khoản Facebook</span>
+                                </a>
+                                <a href="login.html" class="account--item_center"><span>Đăng nhập</span></a>
+                                <div class="account--item_bottom">
+                                    <span>Khách hàng mới?</span>
+                                    <a class="register" href="./signup.html">Tạo tài khoản</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-header_cart">Giỏ hàng
+                            <span class="top-header_cart-quantity">(0)</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="top-header_cart--item">
+                                <h4 class="cart--item_title">Giỏ hàng</h4>
+                                <hr>
+                                <a href="./cart.html" class="cart--item_link">
+                                    <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="top-header_cart">Giỏ hàng
-                        <span class="top-header_cart-quantity">(0)</span>
-                        <i class="fa-solid fa-caret-down"></i>
-                        <div class="top-header_cart--item">
-                            <h4 class="cart--item_title">Giỏ hàng</h4>
-                            <hr>
-                            <a href="" class="cart--item_link">
-                                <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
-                            </a>
-                        </div>
+                    <div class="top-header-left_media">
+                        <a href="">
+                            <div class="container-icon_cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="sticker">0</div>
+                            </div>
+                        </a>
+                        <i onclick="openSearch()"
+                            class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
+                        <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
                     </div>
                 </div>
-                <div class="top-header-left_media">
-                    <a href="">
-                        <div class="container-icon_cart">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <div class="sticker">0</div>
-                        </div>
-                    </a>
-                    <i onclick="openSearch()" class="top-header-left_media--search fa-solid fa-magnifying-glass"></i>
-                    <i onclick="openNav()" class="top-header-left_media--menu fa-solid fa-bars"></i>
+            </div>
+            <div id="container_bg-search" class="container_bg-search">
+                <div class="container">
+                    <div class="top-header_search-media">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <span>Tìm kiếm</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="container_bg-search" class="container_bg-search">
-            <div class="container">
-                <div class="top-header_search-media">
-                    <input type="text" placeholder="Tìm kiếm">
-                    <span>Tìm kiếm</span>
-                </div>
-            </div>
-        </div>
-        <div class="center-header">
-            <div class="container d-flex justify-content-between" style="align-items: center;">
-                <div class="menu_products">
-                    <i class="fa-solid fa-bars"></i>
-                    Danh mục sản phẩm
-                    <nav class="menu_item">
-                        <ul class="type_products">
-                            <li class="type_products-item type_hots">
-                                <span class="container_type-arrow">
-                                    <div>Nổi bật</div>
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </span>
-                                <ul class="type_hot-child">
-                                    <li><a href="">
-                                            <p>Sách bán chạy</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Sách mới</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Sắp phát hành</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Sách giảm giá</p>
-                                        </a></li>
-                                </ul>
-                            </li>
-                            <li class="type_products-item"><a href=""><span>Văn Học Nước Ngoài</span></a></li>
-                            <li class="type_products-item"><a href=""><span>Sách Văn Học Trong Nước</span></a></li>
-                            <li class="type_products-item"><a href=""><span>Sách Kĩ Năng Sống</span></a></li>
-                            <li class="type_products-item"><a href=""><span>Sách Thiếu Nhi</span></a></li>
-                            <li class="type_products-item"><a href=""><span>Truyện Tranh</span></a></li>
-                            <li class="type_products-item type_companys">
-                                <a href="">
+            <div class="center-header">
+                <div class="container d-flex justify-content-between" style="align-items: center;">
+                    <div class="menu_products">
+                        <i class="fa-solid fa-bars"></i>
+                        Danh mục sản phẩm
+                        <nav class="menu_item">
+                            <ul class="type_products">
+                                <li class="type_products-item type_hots">
                                     <span class="container_type-arrow">
-                                        <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                        <div>Nổi bật</div>
+                                        <i class="fa-solid fa-chevron-right"></i>
                                     </span>
-                                </a>
-                                <ul class="type_companys-child">
-                                    <li><a href="">
-                                            <p>Công ty cổ phần zgroup</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Skybooks</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Chilbooks</p>
-                                        </a></li>
-                                    <li><a href="">
-                                            <p>Thái Hà</p>
-                                        </a></li>
-                                    <li><a class="type_company-all" href="">
-                                            <p>Tất cả công ty phát hành</p>
-                                        </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                                    <ul class="type_hot-child">
+                                        <li><a href="">
+                                                <p>Sách bán chạy</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách mới</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sắp phát hành</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Sách giảm giá</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Nước Ngoài</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Trong Nước</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Tâm Lý Kĩ Năng Sống</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Thiếu Nhi</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Kinh Tế</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Lịch Sử - Địa Lý - Tôn Giáo</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Khoa Học Kỹ Thuật</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Truyện Tranh</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Tập Chí - Báo</span></a></li>
+                                <li class="type_products-item type_companys">
+                                    <a href="">
+                                        <span class="container_type-arrow">
+                                            <div>Công Ty Phát Hành</div><i class="fa-solid fa-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                    <ul class="type_companys-child">
+                                        <li><a href="">
+                                                <p>Công ty cổ phần zgroup</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Skybooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Chilbooks</p>
+                                            </a></li>
+                                        <li><a href="">
+                                                <p>Thái Hà</p>
+                                            </a></li>
+                                        <li><a class="type_company-all" href="">
+                                                <p>Tất cả công ty phát hành</p>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="" class="hotline d-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Hotline: </h4>
+                        <span>0867 415 853</span>
+                    </a>
+
                 </div>
-                <a href="" class="hotline d-flex">
-                    <i class="fa-solid fa-phone"></i>
-                    <h4>Hotline: </h4>
-                    <span>0867 415 853</span>
-                </a>
-
             </div>
-        </div>
 
-    </div>
-    <!-- open sidenav -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <button class="dropdown-btn">Tài khoản
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Đăng ký</a>
-            <a href="#">Đăng nhập</a>
         </div>
-        <button class="dropdown-btn">Nổi bật
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Sách bán chạy</a>
-            <a href="#">Sách mới</a>
-            <a href="#">Sắp phát hành</a>
-            <a href="#">Sách giảm giá</a>
+        <!-- open sidenav -->
+        <div id="mySidenav" class="sidenav" style="overflow: hidden;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <button class="dropdown-btn">Tài khoản
+                 <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown-container">
+                 <a href="#">Đăng ký</a>
+                 <a href="#">Đăng nhập</a>
+             </div>
+             <button class="dropdown-btn">Nổi bật
+                 <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown-container">
+                <a href="#">Sách bán chạy</a>
+                <a href="#">Sách mới</a>
+                <a href="#">Sắp phát hành</a>
+                 <a href="#">Sách giảm giá</a>
+             </div>
+             <a href="#">Sách Văn Học Nước Ngoài</a>
+            <a href="#">Sách Văn Học Trong Nước</a>
+             <a href="#">Sách Tâm Lý Kĩ Năng Sống</a>
+             <a href="#">Sách Thiếu Nhi</a>
+             <a href="#">Sách Kinh Tế</a>
+             <a href="#">Lịch Sử - Địa Lý - Tôn Giáo</a>
+             <a href="#">Khoa Học Kỹ Thuật</a>
+             <a href="#">Truyện Tranh</a>
+             <a href="#">Tập Chí - Báo</a>
         </div>
-        <a href="#">Văn học nước ngoài</a>
-        <a href="#">Sách văn học trong nước</a>
-        <a href="#">Sách kĩ năng sống</a>
-        <a href="#">Sách thiếu nhi</a>
-    </div>
+    </header>
 
     <!--------- end header---------- -->
     <!--------- sign up form---------- -->
@@ -174,21 +185,21 @@
             <div class="info-title">*Thông tin đăng nhập:</div>
             <div class="input ">
                 <label>Email</label>
-                <input type="text" placeholder="Nhập vào email" id="email">
+                <input type="text" placeholder="Nhập vào email" id="email" onchange="emailOnChange(this.value)">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-xmark"></i>
                 <small>Error</small>
             </div>
             <div class="input ">
                 <label>Mật khẩu</label>
-                <input type="password" placeholder="Nhập vào mật khẩu" id="password">
+                <input type="password" placeholder="Nhập vào mật khẩu" id="password" onchange="passwordOnChange(this.value)">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-xmark"></i>
                 <small>Error</small>
             </div>
             <div class="input ">
                 <label>Xác nhận mật khẩu</label>
-                <input type="password" placeholder="Nhập lại mật khẩu" id="password2">
+                <input type="password" placeholder="Nhập lại mật khẩu" id="password2" onchange="passwordAOnChange(this.value)">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-xmark"></i>
                 <small>Error</small>
@@ -197,14 +208,14 @@
             <div class="compul-info">
                 <div class="input fname">
                     <label>Họ</label>
-                    <input placeholder="Họ" type="text" id="fname">
+                    <input placeholder="Họ" type="text" id="fname" onchange="namefOnChange(this.value)">
                     <i class="fa-solid fa-circle-check"></i>
                     <i class="fa-solid fa-circle-xmark"></i>
                     <small>Error</small>
                 </div>
                 <div class="input lname">
                     <label>Tên</label>
-                    <input placeholder="Tên" type="text" id="lname">
+                    <input placeholder="Tên" type="text" id="lname" onchange="namelOnChange(this.value)">
                     <i class="fa-solid fa-circle-check"></i>
                     <i class="fa-solid fa-circle-xmark"></i>
                     <small>Error</small>
@@ -212,7 +223,7 @@
             </div>
             <div class="input ">
                 <label>Số điện thoại</label>
-                <input placeholder="SĐT" type="tel" id="phoneNumber">
+                <input placeholder="SĐT" type="tel" id="phoneNumber" onchange="phoneOnChange(this.value)">
                 <i class="fa-solid fa-circle-check"></i>
                 <i class="fa-solid fa-circle-xmark"></i>
                 <small>Error</small>
@@ -321,12 +332,11 @@
         </div>
     </footer>
 
-    <!-- nut cuon len dau trang -->
-    <div class="fixed-bottom">
-        <div class="btn btn-warning float-right rounded-circle nutcuonlen" id="backtotop" href="#" style="background:#279736;"><i
-                class="fa fa-chevron-up text-white"></i></div>
-    </div>
-
+<!-- nut cuon len dau trang -->
+<div class="fixed-bottom">
+    <div class="btn btn-warning float-right rounded-circle nutcuonlen" id="backtotop" href="#" style="background:#0f81e5;"><i
+            class="fa fa-chevron-up text-white"></i></div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
