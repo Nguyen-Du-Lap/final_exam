@@ -153,6 +153,7 @@ input:focus {
 }
 .red-link:hover{
     text-decoration: none;
+    cursor: pointer;
 }
 /*---------forgotPassword----------*/
 .forgotPassword{

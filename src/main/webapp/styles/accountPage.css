@@ -17,6 +17,7 @@
     position: relative;
     display: block;
     clear: both;
+    overflow: hidden;
 }
 
 .form_ctrl, .s_adv {
@@ -71,7 +72,7 @@
 }
 
 .acc_ctrl .list_ctrl ul li.first {
-    border-top: none;
+    /*border-top: none;*/
 }
 
 .acc_ctrl .list_ctrl, .acc_ctrl .list_ctrl ul, .acc_ctrl .list_ctrl ul li {
@@ -268,4 +269,13 @@ a {
     display: block;
     float: left;
     margin-top: 10px;
+}
+
+
+.acc_ctrl .list_ctrl .first.active, .first:hover, .first:focus {
+    background-color: #c6defd;
+    text-decoration: none;
+    /*color: red;*/
+    box-shadow: none;
+    /*border: 1px solid rgb(22 22 72);*/
 }
