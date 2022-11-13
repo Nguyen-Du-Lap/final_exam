@@ -28,7 +28,7 @@
         <div id="header">
             <div class="top-header">
                 <div class="container d-flex justify-content-between" style="align-items: center;">
-                    <a class="logo" href="#">DORAEMON</a>
+                    <a class="logo" href="./home.html">DORAEMON</a>
                     <div class="top-header_search">
                         <input type="text" placeholder="Tìm kiếm">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -41,10 +41,10 @@
                                     <i class="fa-brands fa-facebook-f"></i>
                                     <span>Tài khoản Facebook</span>
                                 </a>
-                                <a href="" class="account--item_center"><span>Đăng nhập</span></a>
+                                <a href="login.html" class="account--item_center"><span>Đăng nhập</span></a>
                                 <div class="account--item_bottom">
                                     <span>Khách hàng mới?</span>
-                                    <a class="register" href="">Tạo tài khoản</a>
+                                    <a class="register" href="./signup.html">Tạo tài khoản</a>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                             <div class="top-header_cart--item">
                                 <h4 class="cart--item_title">Giỏ hàng</h4>
                                 <hr>
-                                <a href="" class="cart--item_link">
+                                <a href="./cart.html" class="cart--item_link">
                                     <span>Xem giỏ hàng <i class="fa-solid fa-caret-right"></i></span>
                                 </a>
                             </div>
@@ -108,11 +108,15 @@
                                             </a></li>
                                     </ul>
                                 </li>
-                                <li class="type_products-item"><a href=""><span>Văn Học Nước Ngoài</span></a></li>
-                                <li class="type_products-item"><a href=""><span>Sách Văn Học Trong Nước</span></a></li>
-                                <li class="type_products-item"><a href=""><span>Sách Kĩ Năng Sống</span></a></li>
-                                <li class="type_products-item"><a href=""><span>Sách Thiếu Nhi</span></a></li>
-                                <li class="type_products-item"><a href=""><span>Truyện Tranh</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Nước Ngoài</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Văn Học Trong Nước</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Tâm Lý Kĩ Năng Sống</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Thiếu Nhi</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Sách Kinh Tế</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Lịch Sử - Địa Lý - Tôn Giáo</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Khoa Học Kỹ Thuật</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Truyện Tranh</span></a></li>
+                                <li class="type_products-item"><a href="vanhocnuocngoai.html"><span>Tập Chí - Báo</span></a></li>
                                 <li class="type_products-item type_companys">
                                     <a href="">
                                         <span class="container_type-arrow">
@@ -151,28 +155,33 @@
 
         </div>
         <!-- open sidenav -->
-        <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav" style="overflow: hidden;">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <button class="dropdown-btn">Tài khoản
-                <i class="fa fa-caret-down"></i>
-            </button>
+             <button class="dropdown-btn">Tài khoản
+                 <i class="fa fa-caret-down"></i>
+             </button>
             <div class="dropdown-container">
-                <a href="#">Đăng ký</a>
-                <a href="#">Đăng nhập</a>
-            </div>
-            <button class="dropdown-btn">Nổi bật
-                <i class="fa fa-caret-down"></i>
-            </button>
+                 <a href="#">Đăng ký</a>
+                 <a href="#">Đăng nhập</a>
+             </div>
+             <button class="dropdown-btn">Nổi bật
+                 <i class="fa fa-caret-down"></i>
+             </button>
             <div class="dropdown-container">
                 <a href="#">Sách bán chạy</a>
                 <a href="#">Sách mới</a>
                 <a href="#">Sắp phát hành</a>
-                <a href="#">Sách giảm giá</a>
-            </div>
-            <a href="#">Văn học nước ngoài</a>
-            <a href="#">Sách văn học trong nước</a>
-            <a href="#">Sách kĩ năng sống</a>
-            <a href="#">Sách thiếu nhi</a>
+                 <a href="#">Sách giảm giá</a>
+             </div>
+             <a href="#">Sách Văn Học Nước Ngoài</a>
+            <a href="#">Sách Văn Học Trong Nước</a>
+             <a href="#">Sách Tâm Lý Kĩ Năng Sống</a>
+             <a href="#">Sách Thiếu Nhi</a>
+             <a href="#">Sách Kinh Tế</a>
+             <a href="#">Lịch Sử - Địa Lý - Tôn Giáo</a>
+             <a href="#">Khoa Học Kỹ Thuật</a>
+             <a href="#">Truyện Tranh</a>
+             <a href="#">Tập Chí - Báo</a>
         </div>
     </header>
     <!--------- end header---------- -->
@@ -276,7 +285,7 @@
             </div>
             <input id="btnUserCoupon" class="dr_button" type="button" value="ÁP DỤNG" onclick="check_code_sale();">
 
-            <h4 class="order_header">Chi tiết đơn</h4>
+            <h4 class="order_header">Chi tiết đơn hàng</h4>
             <div class="container_order">
                 <div class="wrap_oder">
                     <h2 class="title">Đồng Vọng Dân Gian - Tập 1</h2>
@@ -292,6 +301,7 @@
                         <span class="weight fs_s">Khối lượng:</span>
                         <div class="fs_s" id="weight">0.5 Kg</div>
                     </div>
+                    
                     <hr>
                     <div class="wrap_left">
                         <div style="margin-top: 12px;" class="wrap mt">
@@ -311,61 +321,61 @@
                     <input id="bt-update_order" type="button" value="CHỈNH SỬA ĐƠN HÀNG">
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- --------footer ------------->
-    <section class="abovefooter text-white" style="background-color: #1a94ff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="dichvu d-flex align-items-center">
-                        <img src="imgs/footers/iconphone.png" alt="icon-books">
-                        <div class="noidung">
-                            <h6 class="tieude font-weight-bold">HƠN 10000 MẪU ĐIỆN THOẠI </h6>
-                            <p class="detail">Tuyển chọn bởi MeKKiin</p>
+    <footer>
+        <section class="abovefooter text-white" style="background-color: #1a94ff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="dichvu d-flex align-items-center">
+                            <img src="./images/footers/iconphone.png" alt="icon-books" style="border-radius: 100%;">
+                            <div class="noidung">
+                                <h6 class="tieude font-weight-bold">HƠN 10000 LOẠI SÁCH </h6>
+                                <p class="detail">Tuyển chọn bởi Doraemon</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="dichvu d-flex align-items-center">
-                        <img src="imgs/footers/icon-ship.png" alt="icon-ship">
-                        <div class="noidung">
-                            <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
-                            <p class="detail">Từ 150.000đ ở TP.HCM</p>
-                            <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="dichvu d-flex align-items-center">
+                            <img src="./images/footers/icon-ship.png" alt="icon-ship">
+                            <div class="noidung">
+                                <h6 class="tieude font-weight-bold">MIỄN PHÍ GIAO HÀNG</h6>
+                                <p class="detail">Từ 150.000đ ở TP.HCM</p>
+                                <p class="detail">Từ 300.000đ ở tỉnh thành khác</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="dichvu d-flex align-items-center">
-                        <img src="imgs/footers/icon-gift.png" alt="icon-gift">
-                        <div class="noidung">
-                            <h6 class="tieude font-weight-bold">QUÀ TẶNG MIỄN PHÍ</h6>
-                            <p class="detail">Tặng 1 ốp lưng</p>
-                            <p class="detail">Miễn phí 5 stickers</p>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="dichvu d-flex align-items-center">
+                            <img src="./images/footers/icon-gift.png" alt="icon-gift">
+                            <div class="noidung">
+                                <h6 class="tieude font-weight-bold">QUÀ TẶNG MIỄN PHÍ</h6>
+                                <p class="detail">Tặng kèm bìa bao sách</p>
+                                <p class="detail">Miễn phí 5 stickers</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="dichvu d-flex align-items-center">
-                        <img src="imgs/footers/icon-return.png" alt="icon-return">
-                        <div class="noidung">
-                            <h6 class="tieude font-weight-bold">ĐỔI TRẢ NHANH CHÓNG</h6>
-                            <p class="detail">Hàng bị lỗi được đổi trả nhanh chóng</p>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="dichvu d-flex align-items-center">
+                            <img src="./images/footers/icon-return.png" alt="icon-return">
+                            <div class="noidung">
+                                <h6 class="tieude font-weight-bold">ĐỔI TRẢ NHANH CHÓNG</h6>
+                                <p class="detail">Hàng bị lỗi được đổi trả nhanh chóng</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
+        </section>
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-3 col-xs-6">
                     <div class="gioithieu">
-                        <h6 class="header text-uppercase font-weight-bold">Về MeKKiin</h6>
-                        <a href="#">Giới thiệu về MeKKiin</a>
+                        <h6 class="header text-uppercase font-weight-bold">Về Doraemon</h6>
+                        <a href="#">Giới thiệu về Doraemon</a>
                         <a href="#">Tuyển dụng</a>
                         <div class="fb-like" data-href="https://www.facebook.com/DealBook-110745443947730/"
                             data-width="300px" data-layout="button" data-action="like" data-size="small"
@@ -384,23 +394,30 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="lienket">
                         <h6 class="header text-uppercase font-weight-bold">HỢP TÁC VÀ LIÊN KẾT</h6>
-                        <img src="imgs/footers/dang-ky-bo-cong-thuong.png" alt="dang-ky-bo-cong-thuong">
+                        <img src="./images/footers/dang-ky-bo-cong-thuong.png" alt="dang-ky-bo-cong-thuong">
                     </div>
                 </div>
                 <div class="col-md-3 col-xs-6">
                     <div class="ptthanhtoan">
                         <h6 class="header text-uppercase font-weight-bold">Phương thức thanh toán</h6>
-                        <img src="imgs/footers/visa-payment.jpg" alt="visa-payment">
-                        <img src="imgs/footers/master-card-payment.jpg" alt="master-card-payment">
-                        <img src="imgs/footers/jcb-payment.jpg" alt="jcb-payment">
-                        <img src="imgs/footers/atm-payment.jpg" alt="atm-payment">
-                        <img src="imgs/footers/cod-payment.jpg" alt="cod-payment">
-                        <img src="imgs/footers/payoo-payment.jpg" alt="payoo-payment">
+                        <img src="./images/footers/visa-payment.jpg" alt="visa-payment">
+                        <img src="./images/footers/master-card-payment.jpg" alt="master-card-payment">
+                        <img src="./images/footers/jcb-payment.jpg" alt="jcb-payment">
+                        <img src="./images/footers/atm-payment.jpg" alt="atm-payment">
+                        <img src="./images/footers/cod-payment.jpg" alt="cod-payment">
+                        <img src="./images/footers/payoo-payment.jpg" alt="payoo-payment">
                     </div>
                 </div>
             </div>
         </div>
+
     </footer>
+    <!-- nut cuon len dau trang -->
+<div class="fixed-bottom">
+    <div class="btn btn-warning float-right rounded-circle nutcuonlen" id="backtotop" href="#" style="background:#0f81e5;"><i
+            class="fa fa-chevron-up text-white"></i></div>
+</div>
+
     <!-- ----js phần header -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
